@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0a10">
+    <meta
+      name="description"
+      content="Real Lighthouse website audits, evidence-led findings, and practical fixes."
+    >
+    <title>Roast My Website — honest audits, sharper feedback</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/sample-report.js" defer></script>
+    <script src="/static/js/screenshot.js" defer></script>
+    <script src="/static/js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="Roast My Website home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 3.5 35.2 12v16L20 36.5 4.8 28V12L20 3.5Z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="m13 24 4.1-10.5h5.8L27 24m-11.6-3.1h9.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand-name">roast<span>my</span>website</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#how-it-works">How it works</a>
+          <a href="#sample-report">Report preview</a>
+        </nav>
+        <a class="header-cta" href="#audit">Get roasted <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main id="main">
+        <section class="hero" id="audit" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="status-dot"></span> THE TECHNICAL REALITY CHECK</div>
+            <h1 id="hero-title">Your website called.<br>It wants <span>a performance review.</span></h1>
+            <p class="hero-description">
+              Get a real Lighthouse audit, the receipts behind every finding, and clear next steps for what’s actually broken.
+            </p>
+            <form class="audit-form" id="audit-form" novalidate>
+              <label class="visually-hidden" for="website-url">Website URL</label>
+              <span class="input-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none">
+                  <circle cx="8.8" cy="8.8" r="5.8" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="m13 13 4 4M3.5 8.8h10.6M8.8 3.5c1.4 1.5 2.1 3.2 2.1 5.3s-.7 3.8-2.1 5.3M8.8 3.5C7.4 5 6.7 6.7 6.7 8.8s.7 3.8 2.1 5.3" stroke="currentColor" stroke-width="1.1"/>
+                </svg>
+              </span>
+              <input
+                id="website-url"
+                name="url"
+                type="url"
+                placeholder="https://your-website.com"
+                autocomplete="url"
+                spellcheck="false"
+                aria-describedby="url-hint url-error"
+                required
+              >
+              <label class="visually-hidden" for="audit-strategy">Audit device</label>
+              <select id="audit-strategy" name="strategy" aria-label="Audit device">
+                <option value="mobile">Mobile</option>
+                <option value="desktop">Desktop</option>
+              </select>
+              <button class="button button-primary" type="submit">
+                <span>Run audit</span><span aria-hidden="true">↗</span>
+              </button>
+            </form>
+            <p class="form-hint" id="url-hint">Public URL only <span aria-hidden="true">·</span> Choose mobile or desktop <span aria-hidden="true">·</span> No data stored</p>
+            <p class="form-error" id="url-error" role="alert" hidden></p>
+            <p class="audit-status" id="audit-status" role="status" aria-live="polite" hidden></p>
+            <p class="prototype-note" id="prototype-note">
+              <span aria-hidden="true">ⓘ</span> The report below is clearly labelled sample data until a live PageSpeed audit succeeds.
+            </p>
+          </div>
+
+          <aside class="hero-aside" aria-label="Audit principles">
+            <div class="orbital-art" aria-hidden="true">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="orbit orbit-three"></div>
+              <div class="orbit-core"><span>R</span><i></i></div>
+              <span class="orbit-spark spark-one">✳</span>
+              <span class="orbit-spark spark-two">✳</span>
+              <span class="orbit-spark spark-three">✦</span>
+            </div>
+            <div class="principle-card">
+              <div class="principle-icon" aria-hidden="true">✳</div>
+              <div>
+                <strong>Receipts, not vibes.</strong>
+                <p>Every roast is tied to a real finding.</p>
+              </div>
+              <span class="principle-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="aside-footnote"><span class="status-dot"></span> HONEST FEEDBACK. ZERO MADE-UP METRICS.</div>
+          </aside>
+        </section>
+
+        <section class="section-divider" id="how-it-works" aria-label="Product principles">
+          <div><span class="divider-number">01</span><span>REAL LIGHTHOUSE DATA</span></div>
+          <span class="divider-line" aria-hidden="true"></span>
+          <div><span class="divider-number">02</span><span>FIXES YOU CAN USE</span></div>
+          <span class="divider-line" aria-hidden="true"></span>
+          <div><span class="divider-number">03</span><span>JOKES WITH EVIDENCE</span></div>
+        </section>
+
+        <section class="screenshot-section" aria-labelledby="screenshot-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dash"></span> A DIFFERENT KIND OF FEEDBACK</p>
+              <h2 id="screenshot-title">Have a screenshot instead?</h2>
+              <p class="section-description">Preview a screenshot privately in this browser. It stays on your device; automated visual analysis is not included.</p>
+            </div>
+            <span class="phase-chip">LOCAL PREVIEW</span>
+          </div>
+          <div class="upload-panel">
+            <div class="upload-icon" aria-hidden="true">
+              <svg viewBox="0 0 36 36" fill="none">
+                <path d="M18 23V7m0 0-6 6m6-6 6 6M8 22v6.5c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5V22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="upload-copy">
+              <strong>Give your screenshot a local preview.</strong>
+              <span>PNG, JPEG, or WebP · Up to 10 MB · Previewed locally, never uploaded.</span>
+            </div>
+            <input class="visually-hidden" id="screenshot-input" type="file" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp" aria-describedby="screenshot-help screenshot-status">
+            <label class="button button-secondary upload-button" for="screenshot-input">Choose image</label>
+          </div>
+          <p class="screenshot-help" id="screenshot-help">Visual AI analysis is a future feature and is not connected. Selecting an image does not send it to a server.</p>
+          <p class="screenshot-status" id="screenshot-status" role="status" aria-live="polite"></p>
+          <div class="screenshot-preview" id="screenshot-preview" hidden>
+            <div class="screenshot-preview-image">
+              <img id="screenshot-image" alt="Local preview of the selected website screenshot">
+            </div>
+            <div class="screenshot-preview-details">
+              <div>
+                <strong id="screenshot-filename"></strong>
+                <span id="screenshot-filesize"></span>
+              </div>
+              <button class="button button-secondary screenshot-clear" id="screenshot-clear" type="button">Remove image</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-section" id="sample-report" aria-labelledby="report-title">
+          <div class="section-heading report-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dash"></span> A PEEK AT THE GOOD STUFF</p>
+              <h2 id="report-title">The report, minus the sugar-coating.</h2>
+              <p class="section-description">Four independent Lighthouse categories. Findings ranked by impact, with the evidence and fix right beside them.</p>
+            </div>
+            <span class="sample-badge" id="report-badge"><span class="sample-dot"></span> ILLUSTRATIVE SAMPLE — NOT A LIVE AUDIT</span>
+          </div>
+
+          <div class="sample-banner" id="sample-banner" role="note">
+            <span class="sample-banner-icon" aria-hidden="true">!</span>
+            <p><strong>Demo data, not an audit.</strong> These example scores and findings are fictional UI fixtures. No website was tested, and they must not be treated as real results.</p>
+          </div>
+
+          <div class="report-meta">
+            <div class="report-site">
+              <span class="site-favicon" id="site-favicon" aria-hidden="true">S</span>
+              <div><strong id="report-site-name">sample-store.example</strong><span id="report-site-meta">Example report fixture · Desktop</span></div>
+            </div>
+            <span class="report-meta-label" id="report-source"><span class="status-dot"></span> SAMPLE FIXTURE</span>
+          </div>
+
+          <div class="score-grid" id="score-grid" aria-label="Illustrative Lighthouse category scores"></div>
+
+          <div class="findings-header">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dash"></span> THE RECEIPTS</p>
+              <h3>What needs attention</h3>
+            </div>
+            <span class="finding-count" id="finding-count"></span>
+          </div>
+          <div class="audit-status-summary" id="audit-status-summary" aria-label="Lighthouse audit status counts" hidden></div>
+          <p class="audit-status-explainer" id="audit-status-explainer" hidden>
+            Only automatically scored failures are listed below. Manual or informational audits are not counted as passes; unavailable includes missing data and checks Lighthouse did not automatically score.
+          </p>
+          <div class="findings-list" id="findings-list"></div>
+
+          <aside class="priority-card" id="priority-card" aria-labelledby="priority-title">
+            <div class="priority-heading">
+              <span class="priority-icon" aria-hidden="true">↗</span>
+              <div>
+                <p class="eyebrow">YOUR NEXT MOVES</p>
+                <h3 id="priority-title">Fix the biggest fires first.</h3>
+              </div>
+            </div>
+            <p class="priority-intro" id="priority-intro" hidden>
+              Categories appear from lowest to highest reported Lighthouse score. Within each category, failed checks are ordered by Lighthouse scoring weight; weights are not compared across categories.
+            </p>
+            <ol class="priority-list" id="priority-list"></ol>
+          </aside>
+          <p class="report-disclaimer" id="report-disclaimer">Lighthouse is an automated technical audit—not a complete assessment of usability, visual design, or business performance. This illustrative sample does not represent a real site.</p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="brand footer-brand" href="#" aria-label="Roast My Website home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 3.5 35.2 12v16L20 36.5 4.8 28V12L20 3.5Z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="m13 24 4.1-10.5h5.8L27 24m-11.6-3.1h9.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand-name">roast<span>my</span>website</span>
+        </a>
+        <p>Sharp feedback. Actual evidence. No imaginary metrics.</p>
+        <a class="footer-top" href="#main">Back to top ↑</a>
+      </footer>
+    </div>
+  </body>
+</html>

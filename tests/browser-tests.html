@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roast My Website — browser tests</title>
+    <style>
+      body {
+        max-width: 760px;
+        margin: 40px auto;
+        padding: 0 20px;
+        background: #0b0a10;
+        color: #f2eff8;
+        font: 15px/1.6 "Segoe UI", sans-serif;
+      }
+      li {
+        margin: 8px 0;
+      }
+      .pass {
+        color: #79d7ae;
+      }
+      .fail {
+        color: #ff748a;
+      }
+      #summary {
+        font-weight: 700;
+      }
+    </style>
+    <script src="../static/js/screenshot.js" defer></script>
+    <script src="browser-tests.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Screenshot validation browser tests</h1>
+      <p>These checks run the same file validator used by the application. They do not upload files or need an API key.</p>
+      <p id="summary" role="status" aria-live="polite">Running checks…</p>
+      <ol id="results"></ol>
+    </main>
+  </body>
+</html>
